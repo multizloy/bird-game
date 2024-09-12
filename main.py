@@ -4,7 +4,7 @@ from settings import WIDTH, HEIGHT, ground_space
 from world import World
 
 pygame.init()
-screen = pygame.display.set_mode((WIDTH, HEIGHT, ground_space))
+screen = pygame.display.set_mode((WIDTH, HEIGHT + ground_space))
 pygame.display.set_caption("Flappy Bird")
 
 
