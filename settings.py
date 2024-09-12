@@ -18,6 +18,16 @@ pipe_gap = (pipe_size * 2) + (pipe_size // 2)
 ground_space =50
 
 def import_sprite(path: str) -> pygame.Surface:
+
+    """
+    Import all images in a given path and return them as a list of Surfaces.
+
+    Args:
+        path (str): The path to the directory containing the images to be imported.
+
+    Returns:
+        list[pygame.Surface]: A list of all the images in the directory as Surfaces.
+    """
     surface_list = []
     for _, __, img_files in walk(path):
         for img_file in img_files:
